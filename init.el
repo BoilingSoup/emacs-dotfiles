@@ -12,7 +12,17 @@
 
 (set-face-attribute 'default nil :font "Hack" :height 160)             ; Hack font
 
-(load-theme 'wombat)
+(load-theme 'wombat)                                                   ; Theme
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(column-number-mode)                                                   ; Column number mode
+(global-display-line-numbers-mode t)
+
+(dolist (mode '(org-mode-hook                                          ; Disable line numbers for some modes
+		term-mode-hook
+		eshell-mode-hook))
+  (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

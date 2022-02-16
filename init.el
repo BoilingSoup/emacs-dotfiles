@@ -21,6 +21,7 @@
 
 (dolist (mode '(org-mode-hook                                          ; Disable line numbers for some modes
 		term-mode-hook
+		shell-mode-hook
 		eshell-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
 

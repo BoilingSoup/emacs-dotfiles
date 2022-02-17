@@ -12,8 +12,6 @@
 
 (set-face-attribute 'default nil :font "Hack" :height 160)             ; Hack font
 
-(load-theme 'doom-acario-dark t)                                         ; Theme
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (column-number-mode)                                                   ; Column number mode
@@ -138,3 +136,4 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (use-package doom-themes)                                              ; Use doom-themes
+(load-theme 'doom-acario-dark t)                                       ; Theme
